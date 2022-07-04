@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_close"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/close"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Data"
+                    android:layout="@id/close"
+                    android:layout_marginStart="40dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UPLOAD"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="6dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#FF1414"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:id="@+id/final_upload"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/detail_layout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Name"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Address"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_address"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Email"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_email"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Phone Number"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_number"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the Description"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_description"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Any External Link"
+        android:paddingStart="10dp"
+        android:textSize="16dp"
+        android:layout_marginStart="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:layout_marginStart="5dp"
+        android:inputType="textNoSuggestions|textMultiLine|text"
+        android:id="@+id/add_link"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Type"
+        android:textColor="#DF1818"
+        android:textColorHint="#DF1818"
+        android:paddingStart="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/add_type"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click to Add Image"
+            android:background="#33691E"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            android:paddingStart="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/add_image"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pic_layout"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintDimensionRatio="1.2:1"
+                tools:ignore="MissingConstraints"
+                android:layout_margin="5dp"
+                android:id="@+id/add_pic_upload"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#33691E"
+                android:text="Upload"
+                android:id="@+id/pic_upload"
+                android:textColor="@color/white"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="#B71C1C"
+                android:id="@+id/select_again"
+                android:text="Select Again"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

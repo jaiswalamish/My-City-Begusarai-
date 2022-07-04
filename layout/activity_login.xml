@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAC483"
+    tools:context=".loginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+          android:id="@+id/app_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME!"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#A30B0B"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="An app through which you can explore the city Begusarai(Bihar)."
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginStart="10dp"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:inputType="text|textNoSuggestions|textMultiLine"
+            android:id="@+id/email_text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_pass"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:inputType="text|textNoSuggestions|textMultiLine|textPassword"
+            android:id="@+id/password"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign in"
+            android:textSize="14sp"
+            android:id="@+id/signin_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="forgot password ?"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textColor="#0967F8"
+            android:id="@+id/forgot_pass"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Create a new account"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:textColor="#DA1919"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textSize="18dp"
+            android:paddingStart="3dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#DA1919"
+            android:layout_gravity="center"
+            android:background="#C6AA92"
+            android:drawableEnd="@drawable/ic_next"
+            android:drawablePadding="3dp"
+            android:id="@+id/register_text"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
